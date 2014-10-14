@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - "0.10"
+
+env:
+  global:
+    - secure: "secure code here"
+    - secure: "secure code here"
+    - SAUCE_USERNAME=SauseLabUserName
+    - SAUCE_ACCESS_KEY=SauseLabAccessKey
+
+addons:
+  sauce_connect: true
+
+before_install: npm install -g protractor
+
+script:
+  - protractor protractor.conf.js
