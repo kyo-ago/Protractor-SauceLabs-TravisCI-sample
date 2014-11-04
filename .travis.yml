@@ -3,6 +3,11 @@ language: node_js
 node_js:
   - "0.10"
 
+env:
+  global:
+    - secure: gnU+4uQPlLnIIsmVyhK5Lio5HVmhqQXvwBohpNDTIGhWHXZeK6YB+oJESgcwvDSME1h1qMgOYlDDzYd+BfQxpfHilENV5aiJFsEWTj2s+0fL1hIINwX5ggRT8MOBWBA2S0d658RLhKIgjbZdybPUYOskivIY/q4jK/Ep8cxGues=
+    - secure: c6QYP7wPHLn3ErBQr2t9YZaL2FQaQD49gYyl8FoYvgCmPH391iIJPRB6yBjyVmmPhFVoDaJOK9Xf+/+OmVfwo3GYlSbVqIloVVlhRBFGRzCsL9d4UEPelwcc6aTwjDXLT8++BMSvXBUbmhiS1GuPhOjnuNQ5W2lzamOpEbxSYyk=
+
 addons:
   sauce_connect: true
 
