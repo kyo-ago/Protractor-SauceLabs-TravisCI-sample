@@ -1,2 +1,2 @@
-Protractor-SauseLab-TravisCI-sample
+Protractor-SauceLabs-TravisCI-sample
 ===================================
