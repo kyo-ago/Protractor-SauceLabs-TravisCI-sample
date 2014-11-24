@@ -1,13 +1,8 @@
 describe('angularjs homepage todo list', function() {
   it('should add a todo', function() {
-    browser.get('http://www.angularjs.org');
-
-    element(by.model('todoText')).sendKeys('write a protractor test');
-    element(by.css('[value="add"]')).click();
-
-    var todoList = element.all(by.repeater('todo in todos'));
-    expect(todoList.count()).toEqual(6);
-    expect(todoList.get(2).getText()).toEqual('write');
+    browser.get('http://example.local/index.html');
+    var links = element.all(by.repeater('a'));
+    expect(links.count()).toEqual(6);
   });
 });
 
