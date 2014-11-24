@@ -8,7 +8,10 @@ addons:
    - example.local
   sauce_connect: true
 
-before_install: npm install -g protractor
+before_install:
+  - sudo apt-get install nginx
+  - sudo service nginx restart
+  - npm install -g protractor
 
 script:
   - protractor protractor.conf.js
