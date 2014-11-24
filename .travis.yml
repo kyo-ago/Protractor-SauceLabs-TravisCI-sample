@@ -9,7 +9,7 @@ addons:
   sauce_connect: true
 
 before_install:
-  - python -m SimpleHTTPServer
+  - python -m SimpleHTTPServer &
   - npm install -g protractor
 
 script:
