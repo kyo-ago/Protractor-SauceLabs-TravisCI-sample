@@ -1,9 +1,9 @@
-describe('angularjs homepage todo list', function() {
+describe('Protractor-SauceLabs-TravisCI-sample', function() {
   browser.ignoreSynchronization = true;
-  it('should add a todo', function() {
+  it('should get a link', function() {
     browser.get('http://example.local:8000/index.html');
     var links = element.all(by.repeater('a'));
-    expect(links.count()).toEqual(6);
+    expect(links.count()).toEqual(a);
   });
 });
 
