@@ -1,4 +1,5 @@
 describe('angularjs homepage todo list', function() {
+  browser.ignoreSynchronization = true;
   it('should add a todo', function() {
     browser.get('http://example.local:8000/index.html');
     var links = element.all(by.repeater('a'));
