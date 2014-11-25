@@ -11,7 +11,6 @@ addons:
 before_install:
   - python -m SimpleHTTPServer 8000 &
   - npm install -g protractor
-  - curl localhost:8000/index.html
 
 script:
   - protractor protractor.conf.js
