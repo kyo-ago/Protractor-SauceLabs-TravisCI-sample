@@ -1,6 +1,5 @@
 exports.config = {
   capabilities: {
-    'tunnel-identifier' : process.env.TRAVIS_JOB_NUMBER,
     'browserName': 'chrome'
   },
   sauceUser: process.env.SAUCE_USERNAME,
