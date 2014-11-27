@@ -4,8 +4,6 @@ node_js:
   - "0.10"
 
 addons:
-  hosts:
-   - example.local
   sauce_connect: true
 
 before_install:
