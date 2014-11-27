@@ -6,7 +6,9 @@ node_js:
 addons:
   sauce_connect: true
 
-before_install: npm install -g protractor
+before_install:
+  - python -m SimpleHTTPServer 8000 &
+  - npm install -g protractor
 
 script:
   - protractor protractor.conf.js
