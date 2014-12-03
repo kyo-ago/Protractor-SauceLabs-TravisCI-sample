@@ -7,6 +7,7 @@ addons:
   sauce_connect: true
 
 before_install:
+  - ifconfig
   - sudo apt-get install nginx
   - sudo nginx -p . -c cocproxy.nginx.conf
   - npm install -g protractor
