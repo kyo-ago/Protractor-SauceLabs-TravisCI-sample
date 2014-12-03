@@ -8,7 +8,7 @@ addons:
 
 before_install:
   - sudo apt-get install nginx
-  - nginx -p . -c cocproxy.nginx.conf
+  - sudo nginx -p . -c cocproxy.nginx.conf
   - npm install -g protractor
 
 script:
