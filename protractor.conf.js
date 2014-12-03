@@ -1,7 +1,7 @@
 exports.config = {
   capabilities: {
     'tunnel-identifier' : process.env.TRAVIS_JOB_NUMBER,
-    'browserName': 'safari',
+    'browserName': 'chrome',
     'proxy' : {
       'proxyType' : 'direct'
     }
