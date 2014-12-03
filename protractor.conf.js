@@ -1,10 +1,7 @@
 exports.config = {
   capabilities: {
     'tunnel-identifier' : process.env.TRAVIS_JOB_NUMBER,
-    'browserName': 'internet explorer',
-    'proxy' : {
-      'proxyType' : 'direct'
-    }
+    'browserName': 'internet explorer'
   },
   sauceUser: process.env.SAUCE_USERNAME,
   sauceKey: process.env.SAUCE_ACCESS_KEY,
