@@ -10,7 +10,6 @@ before_install:
   - sudo apt-get install nginx
   - sudo nginx -p . -c cocproxy.nginx.conf
   - npm install -g protractor
-  - export HTTP_PROXY="localhost:8087"
 
 script:
   - protractor protractor.conf.js
