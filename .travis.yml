@@ -7,8 +7,9 @@ addons:
   sauce_connect: true
 
 before_install:
-  - python -m SimpleHTTPServer 8000 &
+  - sudo apt-get install nginx
+  - sudo nginx -p . -c cocproxy.nginx.conf
   - npm install -g protractor
 
 script:
-  - protractor protractor.conf.js
+  - protractor protractor.conf.js`
