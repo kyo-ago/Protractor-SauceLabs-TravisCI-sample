@@ -12,4 +12,4 @@ before_install:
   - npm install -g protractor
 
 script:
-  - protractor protractor.conf.js`
+  - protractor protractor.conf.js
